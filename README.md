@@ -33,26 +33,10 @@ inside of a rectangle or circle have a negative distance. This is useful in a
 lot of areas, such as font rendering, where you can use it to bevel the edges
 of a font.
 
-Suppose you have a rectangle that looks like this:
-
- ******
- *    *
- *    *
- *    *
- ******
-
 All of the grid spaces one on the inside of the rectangle have a value of -1,
 which you will print as 'A'. All spaces at -2 you will print as 'B', and so
 forth, down to -9 as 'I', and then '.' for anything 10 or more away from an
 edge.
-
-So for that rectangle above, the inside would be filled like this:
-
- ******
- *AAAA*
- *ABBA*
- *AAAA*
- ******
 
 If you have overlapping areas, you will output the value closest to 0. Drop
 all decimals, so -0.5 would be a 0, which would be printed as a '*'.
@@ -102,23 +86,3 @@ Please enter the x,y,r for a circle:
 10 10 7
 Do you want to enter a 1) Asteroid, 2) Rectangle, 3) Circle? 4) Quit
 4
-76554433333333344556
-65543322222222233455
-55433211111111123345
-5432211*******112234
-43321*****A*****1233
-4321***AAABAAA***123
-3211**ABBBCBBBA**112
-321**ABBCCDCCBBA**12
-321**ABCDDEDDCBA**12
-321**ABCDEFEDCBA**12
-321*ABCDEFGFEDCBA*12
-321**ABCDEFEDCBA**12
-321**ABCDDEDDCBA**12
-321**ABBCCDCCBBA**12
-3211**ABBBCBBBA**112
-4321***AAABAAA***123
-43321*****A*****1233
-5432211*******112234
-55433211111111123345
-65543322222222233455
