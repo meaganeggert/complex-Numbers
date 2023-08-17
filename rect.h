@@ -1,7 +1,9 @@
 #pragma once
 #include <iostream>
 #include <cmath>
-#include "./point.h"
+#ifndef RECT_H
+#define RECT_H
+#include "point.h"
 
 using namespace std;
 
@@ -100,3 +102,4 @@ struct Rectangle {
         }
 */
 };
+#endif
