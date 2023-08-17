@@ -1,5 +1,11 @@
-#include "./point.h"
+#pragma once
 #include <iostream>
+#include <algorithm>
+#include <cmath>
+#ifndef CIRCLE_H
+#define CIRCLE_H
+#include "point.h"
+
 class Circle {
         //YOU: Make some member variables to describe a circle
         private:
@@ -52,3 +58,4 @@ class Circle {
 
 
 };
+#endif
