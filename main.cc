@@ -1,8 +1,9 @@
 #include "/public/read.h"
 #include <vector>
+#include <cmath>
 #include <algorithm>
-#include "./rect.h"
-#include "./circle.h"
+#include "rect.h"
+#include "circle.h"
 using namespace std;
 
 [[noreturn]]
@@ -94,7 +95,7 @@ int main() {
         for (int i = 0; i < ROWS; i++) {
                 for (int j = 0; j < COLS; j++) {
                         float closest = 10;
-                        
+
                         auto comparer = [](float closest, float dist) {
                                 return abs(closest) < abs(dist) ? closest : dist;
                         };
