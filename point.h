@@ -1,3 +1,8 @@
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#ifndef POINT_H
+#define POINT_H
 //Basically a point in space, used to be called Asteroid
 //If you want to make a point in space representing (3,4) in the Cartesian system:
 //Point bob{3,4};
@@ -63,3 +68,5 @@ struct Point {
         }
 
 };
+#endif
+
